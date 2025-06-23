@@ -1,7 +1,7 @@
 const express=require('express')
 const employeeRouter=express.Router()
 //const empController = require('../../controllers/empController');
-const verifyJWT = require('../../middleware/verifyJWT');
+const verifyJWT=require('../../middleware/verifyJWT')
 const verifyRoles= require('../../middleware/verifyRoles')
 
 const{getAllEmployees,updateEmployee,createEmployee,deleteEmployee,getEmployee}=require('../../controllers/empController')
